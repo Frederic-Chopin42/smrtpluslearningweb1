@@ -1,0 +1,123 @@
+<html>
+<title>
+    SMRT+ Learning
+</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<style>
+    .navbarspacing {
+        width: 1in;
+    }
+    
+    .navbarspacingmiddle {
+        width: 5.8in;
+    }
+</style>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbarspacing" href="#"></a>
+            <a class="navbar-brand" href="http://127.0.0.1:5000/">SMRT+ Learning</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://127.0.0.1:5000/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/posts">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/terms">Terms and conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/todo">To-Do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shortcuts">Keyboard Shortcuts</a>
+                    </li>
+                    <a class="navbarspacingmiddle" href="#"></a>
+                    {% if isloggedout == True: %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                    {% else: %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/signup">Sign Up</a>
+                        <a class="navbarspacing" href="#"></a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <br />
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">About SMRT+ Learning</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+Our approach in this hackathon is to assist people in finding an efficient method
+that improves one’s experience with online learning while staying connected with others. 
+On our website, we have a to-do list to help people organize, a posting section to connect 
+people with posts and possibly news. We have a hotkeys section of our website that will 
+help people quickly find ways to use their computers.
+                
+</pre>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">“A History Of SMRT+ From Nate Greco”</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+One day in a grade 5 Spanish classroom, a table group of four was formed. The members 
+were: Brandon Phui, Isaac Wong, Ryln Mac, and last but not least the founder, 
+Nate Greco. Nate and Brandon had completely no experience with Spanish except for 
+knowing a few words. My friends helped me out as both Ryln and Isaac had taken Spanish 
+before. The next year came along and new members wished to join. Their names were 
+Mohommad Abdullah and Nathan He. Then, disaster struck. There were only five spots at 
+the table group. Innovative members: Brandon Phui and Ryln Mac came up with a system 
+based on grades to let members into the group. Nathan and Abdullah were then given an 
+incentive to raise their Spanish grades to enter SMRT. That year, COVID-19 was introduced. 
+We were faced with another challenge to stop the COVID-19 pandemic. As COVID-19 was raging 
+in Alberta, we transitioned to online learning. The experience in online learning was 
+described as horrible by many students. It was very disengaging for many students. 
+Students struggled to learn and focus online. As SMRT entered the 7th grade, 
+COVID-19 was widespread. They used sanitizer and masks to allow them to go to school 
+and protect those around them. SMRT became more of an organization as it began to create 
+alliances in competitive games in Physical Education and created friend groups. Once again,
+we had to transition to online learning. This time, however, the online learning experience
+was more structured, but students still found it difficult to connect with other peers and 
+stay focused in class. SMRT had to expand and adapt now because members Shotaro Richardson
+and Piaoyi Wu wished to join the group, so once again, innovative member Brandon Phui came
+up with a new name, SMRT+. SMRT had previously stood for Spanish Management Regulations
+Team but now has been extended further than Spanish class with SMRT+. SMRT was used only
+in Spanish class whereas SMRT+ is inclusive, and not only just used in Spanish class. Over 
+two years, SMRT has developed significantly and is still growing today.
+                
+</pre>
+        </div>
+    </div>
+
+</body>
+<script>
+</script>
+
+</html>

@@ -1,0 +1,470 @@
+<html>
+<title>
+    SMRT+ Learning
+</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<style>
+    .navbarspacing {
+        width: 1in;
+    }
+    
+    .navbarspacingmiddle {
+        width: 5.8in;
+    }
+</style>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbarspacing" href="#"></a>
+            <a class="navbar-brand" href="http://127.0.0.1:5000/">SMRT+ Learning</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://127.0.0.1:5000/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/posts">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/terms">Terms and conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/todo">To-Do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shortcuts">Keyboard Shortcuts</a>
+                    </li>
+                    <a class="navbarspacingmiddle" href="#"></a>
+                    {% if isloggedout == True: %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                    {% else: %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/signup">Sign Up</a>
+                        <a class="navbarspacing" href="#"></a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br />
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">Common Keyboard Shortcuts</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+1. Copy
+    a. Ctrl + C (Windows)
+    b. Cmd + C (Mac OS)
+2. Cut
+    a. Ctrl + X (Windows)
+    b. Cmd + X (Mac OS)
+3. Paste
+    a. Ctrl + V (Windows)
+    b. Cmd + V (Mac OS)
+4. Quit application
+    a. Alt + F4 (Windows)
+    b. Cmd + Q (Mac OS)
+5. Undo 
+    a. Ctrl + Z (Windows)
+    b. Cmd + Z (Mac OS)
+                
+</pre>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">Document Keyboard Shortcuts</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+1. Symbols
+    a. Alt + (# - Different For Every Symbol) (Windows)
+    b. Option + Letter keys (Mac OS)
+2. Delete line of text
+    a. Cmd + delete (Mac OS)
+3. Delete a word
+    a. Option + delete (Mac OS)
+    b. Highlight a line of text
+    c. Shift + → / ← 
+    d. Cmd + → / ← 
+4. Highlight Words
+    a. Ctrl  + Shift + → /← (Windows)
+    b. Opt  + Shift + → /← (Mac OS)
+5. Move the cursor to the beginning of the next word
+    a. Ctrl + → (Windows)
+    b. Opt + → (Mac OS)
+6. Move the cursor to the beginning of the previous word.
+    a. Ctrl + ← (Windows)
+    b. Opt + ← (Mac OS)
+7. Move the cursor to the beginning of the next paragraph.
+    a. Ctrl + ↓ (Windows)
+    b. Move the cursor to the beginning of the previous paragraph
+    c. Ctrl + ↑ (Windows)
+                
+                
+</pre>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">Google Meet Shortcuts</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+1. Unmute/mute
+    a. Ctrl + D (Windows)
+    b. Cmd + D (Mac OS)
+2. Video on/off in Google Meet
+    a. Ctrl + E (Windows)
+    b. Cmd + E (Mac OS)
+                
+</pre>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">Zoom shortcuts</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+1. Unmute/mute
+    a. Alt + A (Windows)
+    b. Cmd + Shift + A (Mac OS)
+2. Temporary unmute
+    a. Space bar (Windows and Mac OS)
+3. Mute/unmute audio for everyone except host (only available to host)
+    a. Alt + M (Windows)
+    b. Mac OS:
+        i. Mute: Cmd+ Ctrl + M 
+        ii. Unmute: Cmd + Ctrl + U
+4. Start/Stop Video
+    a. Alt + V (Windows)
+    b. Cmd + Shift + V (Mac OS)
+5. Start/Stop Screen share
+    a. Alt + Shift + S (Windows)
+    b. Cmd + Shift + S (Mac OS)
+6. Raise/Lower Hand
+    a. Alt + Y (Windows)
+    b. Opt + Y (Mac OS)
+7. Start/Stop Recording
+    a. Alt + R (Windows)
+    b. Cmd + Shift + R (Mac OS)
+8. Enter/Exit Full Screen Mode
+    a. Alt + F (Windows)
+    b. Cmd + Shift + F (Mac OS)
+9. Display/Hide in-meeting participants panel
+    a. Alt + U (Windows)
+    b. Cmd + U (Mac OS)
+10. Display/Hide in-meeting chat panel
+    a. Alt + H (Windows)
+    b. Cmd + Shift + H (Mac OS)
+11. Pause/Resume recording
+    a. Alt + P (Windows)
+    b. Cmd + Shift + P (Mac OS)
+                
+</pre>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">Zoom Shortcuts (For Personal Chats)</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+1. Screenshot
+    a. Alt + Shift + T (Windows)
+    b. Cmd + T (Mac OS)
+2. Close current chat session
+    a. Ctrl + W (Windows)
+3. Search
+    a. Ctrl + F (Windows)
+    b. Cmd + F (Mac OS)
+                
+</pre>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">Chrome Shortcuts</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+1. Reload
+    a. Ctrl + R (Windows)
+    b. Cmd + R (Mac OS)
+2. Bookmark page
+    a. Ctrl + D (Windows)
+    b. Cmd + D (Mac OS)
+3. Close a tab
+    a. Ctrl + W (Windows)
+    b. Cmd + W (Mac OS)
+4. Close a window
+    a. Ctrl + Shift + W (Windows)
+    b. Cmd + shift + W (Mac OS)
+5. New tab
+    a. Ctrl + T (Windows)
+    b. Cmd + T (Mac OS)
+6. New Incognito Window
+    a. Ctrl + Shift + N (Windows)
+    b. Cmd + shift + N (Mac OS)
+7. New Window
+    a. Ctrl + N (Windows)
+    b. Cmd + N (Mac OS)
+8. Search Google
+    a. Ctrl + E (Windows)
+9. Reopen last closed tab
+    a. Ctrl + Shift + T (Windows)
+    b. Cmd + Shift + T (Mac OS)
+10. Quit Chrome
+    a. Ctrl + Q (Windows)
+    b. Cmd + Q (Mac OS)
+11. Zoom-In
+    a. Ctrl + + (Windows)
+    b. Cmd + + (Mac OS)
+12. Zoom-Out
+    a. Ctrl + - (Windows)
+    b. Cmd + - (Mac OS)
+13. Reset Zoom
+    a. Ctrl + 0 (Windows)
+    b. Cmd + 0 (Mac OS)
+14. Open bookmarks
+    a. Ctrl + Alt + B (Windows)
+    b. Cmd + Alt + B (Mac OS)
+15. Open Downloads
+    a. Ctrl + J (Windows)
+    b. Cmd + Shift + J (Mac OS)
+16. Toggle Bookmark Bar
+    a. Ctrl + Shift + B (Windows)
+    b. Cmd + Shift + B (Mac OS)
+17. Put the cursor in the search bar
+    a. Ctrl + L (Windows)
+    b. Cmd + L (Mac OS)
+18. Add www and .com
+    a. Type A Site Name + Ctrl + Enter (Windows and Mac OS)
+19. Open a new tab and perform a Google search:
+    a. Type a search term + Alt + Enter (Windows and Mac OS)
+20. View next tab
+    a. Ctrl + Tab (Windows)
+    b. Cmd + Option + Right Arrow Key (Mac OS)
+21. View previous tab
+    a. Ctrl + Shift + Tab (Windows)
+    b. Cmd + Option + Left Arrow Key (Mac OS)
+                
+</pre>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">Other Shortcuts</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+1. Lock your PC
+    a. Windows Logo Key + L (Windows)
+2. Open a file
+    a. Ctrl + O (Windows)
+    b. Cmd + O (Mac OS)
+3. Save a file
+    a. Ctrl + S (Windows)
+    b. Cmd + S (Mac OS)
+4. Save a file as…
+    a. Ctrl + S (Windows)
+    b. Cmd + shift + S (Mac OS)
+5. Spotlight Search
+    a. Cmd + spacebar (Mac OS)
+6. Switch Between Open Apps
+    a. Alt + Tab
+    b. Ctr + Tap
+7. Close the Active Item, Or Exit The Active App
+    a. Alt + F4 (Windows)
+8. Display and Hide The Desktop
+    a. Windows Logo Key + D (Windows)
+9. Rename the selected item in File Explorer
+    a. F2 (Windows)
+10. Search for a file or folder in File Explorer
+    a. F3 (Windows)
+11. Refresh the Active Window
+    a. F5 (Windows)
+12. Show you password on the sign-in screen
+    a. Alt + F8 (Windows)
+13. Select all items in a document or window.
+    a. Ctrl + A (Windows)
+    b. Cmd + A (Mac OS)
+14. Deleted the selected item and move it to the Recycle Bin
+    a. Ctrl + D OR Delete (Windows)
+15. Switch between all open apps
+    a. Ctrl + Alt + Tab + → OR ←  (Windows)
+    b. Cmd + Tab (Mac OS)
+16. Open Start-Up Menu	
+    a. Ctrl + Esc (Windows)
+17. Open Task Manager
+    a. Ctrl + Shift + Esc (Windows)
+18. Switch keyboard layout (if multiple keyboard layouts are available)
+    a. Ctrl + Shift Or Windows Logo Key + Space (Windows)
+19. Stop or leave the current task
+    a. Esc (Windows)
+20. Take a screenshot or screen recording
+    a. Windows Logo Key + PrtScn (Windows) - Full Screen
+    b. Ctrl + Shift + S (Windows) - Selected portion
+    c. Windows + G (Windows) - Screen Recording
+    d. Cmd + Shift + 3 (Mac OS) - Full screen
+    e. Cmd + Shift + 4 (Mac OS) - Selected portion
+    f. Smd + Shift + 5 (Mac OS) - Selected portion/full screen/window/screen recording portion/ full screen recording
+    g. Ctrl + Shift + Switch Windows (Chrome OS) - Select portion
+21. Create a new folder in File Explorer
+    a. Ctrl + Shift + N (Windows)
+22. Display all folders above the selected folder
+    a. Ctrl + Shift + E (Windows)
+23. Maximize or minimize the active window
+    a. F11 (Windows)
+    b. Cmd + M (Mac OS)
+24. Open Settings
+    a. Windows Logo key + I (Windows)
+                
+</pre>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="card-text">
+            <h1 style="font-size:38px; font-weight:bold; font-family: helvetica;">Google Docs Shortcuts</h1>
+            <pre style="font-size: 14px; font-family: helvetica;">
+1. View shortcuts
+    a. Ctrl + /
+2. Paste without formatting
+    a. Ctrl + Shift + V (Windows)
+    b. Cmd + Shift + V (Mac OS)
+3. Undo
+    a. Ctrl + Z (Windows)
+    b. Cmd + Z (Mac OS)
+4. Redo
+    a. Ctrl + Shift + Z (Windows)
+    b. Cmd + Shift + Z (Mac OS)
+5. Insert or Edit Link
+    a. Ctrl + K (Windows)
+    b. Cmd + K (Mac OS)
+6. Open link
+    a. Alt + Enter (Windows)
+    b. Opt + Enter (Mac OS) 
+7. Print
+    a. Ctrl + P (Windows)
+    b. Cmd + P (Mac OS)
+8. Open A File
+    a. Ctrl + O (Windows)
+    b. Cmd + O (Mac OS)
+9. Find 
+    a. Ctrl + F (Windows)
+    b. Cmd + F (Mac OS)
+10. Find and Replace
+    a. Ctrl + H (Windows)
+    b. Cmd + Shift + H (Mac OS)
+11. Hide menus (compact mode)
+    a. Ctrl + Shift + F (Windows)
+    b. Ctrl + Shift + F (Mac OS)
+12. Search the menus
+    a. Alt + /  (Windows)
+    b. Opt + / (Mac OS)
+13. Repeat last action
+    a. Ctrl + Y (Windows)
+    b. Cmd + Y (Mac OS)
+14. Bold Text
+    a. Ctrl + B (Windows)
+    b. Cmd + B (Mac OS)
+15. Italicize text 
+    a. Ctrl + I (Windows)
+    b. Cmd + I (Mac OS)
+16. Underline text
+    a. Ctrl + U (Windows)
+    b. Cmd + U (Mac OS)
+17. Strikethrough text
+    a. Alt + Shift + 5 (Windows)
+    b. Cmd + Shift + X (Mac OS)
+18. Superscript
+    a. Ctrl + . (Windows)
+    b. Cmd + . (Mac OS)
+19. Subscript 
+    a. Ctrl + , (Windows)
+    b. Cmd + , (Mac OS)
+20. Clear text formatting
+    a. Ctrl + \ OR Ctrl + Space (Windows)
+    b. Cmd + \ (Mac OS)
+21. Increase font size
+    a. Ctrl + Shift + . (Windows)
+    b. Cmd + Shift + . (Mac OS)
+22. Decrease font size
+    a. Ctrl + Shift + , (Windows)
+    b. Cmd + Shift + , (Mac OS)
+23. Left align text
+    a. Ctrl + Shift + L (Windows)
+    b. Cmd + Shift +L (Mac OS)
+24. Center align text
+    a. Ctrl + Shift + E (Windows)
+    b. Cmd + Shift + E (Mac OS)
+25. Right align text
+    a. Ctrl + Shift + R (Windows)
+    b. Cmd + Shift + R (Mac OS)
+26. Justify text
+    a. Ctrl + Shift + J (Windows)
+    b. Cmd + Shift + J (Mac OS)
+27. Numbered list
+    a. Ctrl + Shift + 7 (Windows)
+    b. Cmd + Shift + 7 (Mac OS)
+28. Bulleted List 
+    a. Ctrl + Shift + 8 (Windows)
+    b. Cmd + Shift + 8 (Mac OS)
+29. Insert comment
+    a. Ctrl + Alt + M (Windows)
+    b. Cmd + Opt + M (Mac OS)
+30. Select all
+    a. Ctrl + A (Windows)
+    b. Cmd + A (Mac OS)
+31. File menu
+    a. In Chrome - Alt + F (Windows)
+    b. In other browsers - Alt + Shift + F (Windows)
+    c. Ctrl + Opt + F (Mac OS)
+32. Edit menu
+    a. In Chrome - Alt + E (Windows)
+    b. In other browsers - Alt + Shift + E (Windows)
+    c. Ctrl + Opt + E (Mac OS)
+33. View menu
+    a. In Chrome - Alt + V (Windows)
+    b. In other browsers - Alt + Shift + E (Windows)
+    c. Ctrl + Opt + V (Mac OS)
+34. Insert menu
+    a. In Chrome - Alt + I (Windows)
+    b. In other browser - Alt + Shift + I (Windows)
+    c. Ctrl + Opt + I (Mac OS)
+
+35. Format menu
+    a. In Chrome - Alt + O (Windows)
+    b. In other browser - Alt + Shift + O (Windows)
+    c. Ctrl + Opt + O (Mac OS)
+
+36. Tools menu
+    a. In Chrome - Alt + T (Windows)
+    b. In other browser - Alt + Shift + T (Windows)
+    c. Ctrl + Opt + T (Mac OS)
+37. Help menu
+    a. In Chrome - Alt + H (Windows)
+    b. In other browser - Alt + Shift + H (Windows)
+    c. Ctrl + Opt + H (Mac OS)
+                
+</pre>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
